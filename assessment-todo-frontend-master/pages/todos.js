@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Colours, Typography } from '../definitions';
 import PageLayout from '../components/PageLayout';
 import apiFetch from '../functions/apiFetch';
+import TodoItem from '../components/TodoItem';
 
 
 const Todo = () => {
@@ -14,7 +15,6 @@ const Todo = () => {
             let response = await apiFetch("/todo/");
     
             if (response.status === 200) {
-                console.log(response.body);
                 setTodos(response.body);
             }
             else {
@@ -29,10 +29,9 @@ const Todo = () => {
         <PageLayout title="Create todo">
             <Container>
                 <div>
+                    <h1>My Todos</h1>
                     {todos.map((todo) => (
-                        <div key={todo.id}>
-                            {todo.name}
-                        </div>
+                        <TodoItem todoData={todo} />
                     ))}
                 </div>
             </Container>

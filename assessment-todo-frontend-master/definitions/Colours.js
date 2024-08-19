@@ -15,6 +15,8 @@ export default {
     GRAY_LIGHTER: 'rgba(248, 247, 248, 1)',
     GRAY_LIGHTEST_2: 'rgba(252, 252, 252, 1)',
 
+    GREEN: 'rgba(205, 254, 194, 1)',
+
     TRANSPARENT: 'rgba(0, 0, 0, 0)',
 
     WHITE: 'rgba(255, 255, 255, 1)',
