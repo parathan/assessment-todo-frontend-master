@@ -26,7 +26,7 @@ const Todo = () => {
     }, []);
 
     return (
-        <PageLayout title="Create todo">
+        <PageLayout title="My Todos">
             <Container>
                 <div>
                     <h1>My Todos</h1>
