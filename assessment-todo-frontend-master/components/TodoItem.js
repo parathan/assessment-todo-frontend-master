@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import apiFetch from '../functions/apiFetch';
-import { Colours, Typography } from '../definitions';
-
+import { Colours } from '../definitions';
 
 // TodoItem is a component used to display individual todo items, and takes in a single todo object as props.
 const TodoItem = ({todoData}) => {
